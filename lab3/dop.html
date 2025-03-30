@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../main.CSS">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../favicon-16x16.png">
+    <link rel="icon" href="../favicon-32x32.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <style>
+        div.text5 div {
+            display: none;
+        }
+        div.text1 div {
+            display: none;
+        }
+        div.text2 div {
+            display: none;
+        }
+        div.text3 div {
+            display: none;
+        }
+        div.text4 div {
+            display: none;
+        }
+
+        h1:hover + div {
+            display: block;
+        }
+        .text5 {
+            width: 300px;
+            border: 3px groove;
+            display: inline-block;
+            vertical-align: top;
+            padding: 20px;
+            margin: 18px;
+            background-color: #d8d0d8;
+            box-shadow: 5px 5px 10px rgb(57, 2, 236);
+            color: rgb(17, 135, 186);
+            border-radius: 10px;
+            transition: 2s;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .text5:hover {
+            cursor: pointer;
+            text-decoration: double; 
+            box-shadow: 5px 5px 10px rgb(0, 0, 0); 
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+            font-weight: bold; 
+            color: rgb(22, 0, 187);
+            background-color: rgb(97, 249, 249);
+            transition: 3s;
+            width: 400px;
+            border: 10px solid rgb(215, 252, 0);
+            vertical-align: top;
+            padding: 25px;
+            margin: 22px;
+            border-radius: 10px;
+            text-indent: 15px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+        }
+        .text1 {
+            width: 300px;
+            border: 5px double;
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px;
+            margin: 15px;
+            background-color: #d8ef44;
+            box-shadow: 3px 3px 3px rgb(0, 0, 0); 
+            border-radius: 7px;
+            transition: 2s;
+            color: rgb(23, 102, 5);
+        }
+        .text1:hover {
+            cursor: pointer;
+            text-decoration: solid; 
+            box-shadow: 5px 5px 10px rgb(195, 170, 170); 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: bold; 
+            color: black;
+            background-color: rgb(206, 213, 213);
+            transition: 3s;
+            width: 500px;
+            border: 10px solid;
+            vertical-align: top;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 5px;
+            text-indent: 15px;
+            text-align: justify;
+            font-size: 20px;
+        }
+        .text2 {
+            width: 300px;
+            border: 5px solid rgb(102, 187, 49);
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px;
+            margin: 15px;
+            background-color: #1b8787;
+            color: rgb(209, 201, 192);
+            box-shadow: 7px 7px 7px rgb(97, 81, 178); 
+            border-radius: 7px;
+            transition: 2s;
+        }
+        .text2:hover {
+            cursor: pointer;
+            text-decoration: underline; 
+            box-shadow: 5px 5px 10px rgb(97, 142, 193); 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: normal; 
+            color: rgb(54, 54, 71);
+            background-color: rgb(101, 76, 136);
+            transition: 3s;
+            width: 380px;
+            border: 10px inset;
+            vertical-align: top;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 10px;
+            text-indent: 30px;
+            text-align: justify;
+            font-size: 23px;
+        }
+        .text3 {
+            width: 300px;
+            border: 5px outset rgb(0, 0, 0);
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px;
+            margin: 15px;
+            background-color: #ffffff;
+            color: rgb(49, 14, 188);
+            box-shadow: 7px 7px 7px rgb(37, 138, 111); 
+            border-radius: 7px;
+            transition: 2s;
+        }
+        .text3:hover {
+            cursor: pointer;
+            text-decoration: overline; 
+            box-shadow: 10px 10px 10px rgb(131, 108, 95); 
+            font-family: cursive;
+            font-weight: lighter; 
+            color: rgb(110, 48, 12);
+            background-color: rgb(61, 53, 50);
+            transition: 3s;
+            width: 460px;
+            border: 10px dashed;
+            vertical-align: top;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 20px;
+            text-indent: 20px;
+            text-align: justify;
+            font-size: 23px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .text4 {
+            width: 320px;
+            border: 8px ridge rgb(0, 0, 0);
+            display: inline-block;
+            vertical-align: top;
+            padding: 20px;
+            margin: 18px;
+            background-color: #0dd1eb;
+            color: rgb(229, 130, 10);
+            box-shadow: 7px 7px 7px rgb(98, 236, 132); 
+            border-radius: 13px;
+            transition: 2s;
+        }
+        .text4:hover {
+            cursor: pointer;
+            text-decoration: double; 
+            box-shadow: 10px 15px 18px rgb(94, 93, 184); 
+            font-family: cursive;
+            font-weight: lighter; 
+            color: rgb(74, 6, 66);
+            background-color: rgb(121, 30, 225);
+            transition: 3s;
+            width: 280px;
+            border: 10px ridge;
+            vertical-align: top;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            text-indent: 10px;
+            text-align: justify;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</html>
+<body>
+    <header>
+        НГТУ, ФБ, Лабораторная работа 3
+        <hr>
+    </header>
+   
+    <main>
+        <div class="text5">
+            <h1>Американский кокер-спаниель</h1>
+            <div>
+                Американские кокер-спаниели – лохматые сгустки позитива, обладающие удивительной способностью нравиться каждому, 
+                кто провел в их обществе хотя бы несколько минут. Любознательные и легкие на подъем, они без оглядки подпишутся 
+                на любую предложенную хозяином авантюру и с радостью рванут в самое невероятное путешествие. При этом «американцы» 
+                достаточно управляемы и, невзирая на чуть взбалмошный характер, легко обучаются, так что воспитать из пушистого 
+                непоседы предупредительного джентльмена сможет даже не имеющий достаточного опыта владелец. 
+            </div>
+        </div>
+        <div class="text1">
+            <h1>Английский той-терьер</h1>
+            <div>
+                <b>Английский той-терьер</b> – сгусток позитивной энергии, который обязательно найдет, чем заполнить самый серый и скучный 
+                день. Да, иногда с ним не так просто, как хотелось бы, но зато всегда весело, шумно и невероятно уютно. Недаром на 
+                западе представители породы работают в тесной связке с канистерапевтами и практически не вылезают из детских больниц, 
+                социальных пансионатов и других учреждений, где так необходимы их задорные проказы и психологическая поддержка. 
+            </div>
+        </div>
+
+        <div class="text2">
+            <h1>Лабрадор-ретривер</h1>
+            <div>
+                Лабрадор получил столь широкое распространение благодаря удивительно удачному сочетанию внешних данных и «рабочих» 
+                качеств, которые позволяют представителям породы быть не только компаньонами в повседневной жизни, но и нести службу 
+                на благо человека. Они регулярно попадают на верхние строчки рейтингов «самых преданных», «самых послушных», «самых 
+                трудолюбивых» собак по мнению профессиональных заводчиков и обычных владельцев. 
+            </div>
+        </div>
+
+        <div class="text3">
+            <h1>Джек-рассел-терьер</h1>
+            <div>
+                <i>Джек-рассел-терьер ранее был знаменит своими рабочими качествами норной собаки, однако мало кто из современных 
+                    заводчиков планомерно развивает заложенные в генах этих резвых малышей охотничьи инстинкты. В ХХ веке они 
+                    превратились в преданных и забавных спутников, настоящих любимцев семей, которые привыкли проводить свой досуг активно.</i>
+                </div>
+            </div>
+    
+            <div class="text4">
+                <h1>Вельш-корги пемброк</h1>
+                <div>
+                    Вельш-корги пемброк – большая собака в маленьком теле. Такую характеристику чаще всего приходится слышать от владельцев 
+                    этих собак. Удивительно, как в столь некрупном животном помещается столько любви, жизнерадостности, общительности и 
+                    преданности человеку. А уж по уровню интеллекта и интуиции корги даст фору многим признанным помощникам человека из 
+                    числа крупных служебных собак. Отличный характер, удивительные артистические способности, очаровательная внешность 
+                    позволили представителям породы снискать любовь во многих странах мира. Все более популярной становится она и у нас. 
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <hr>
+            &copy; Ангелина Кузнецова, ФБИ-33, 2 курс, 2025
+        </footer>
+    </body>
